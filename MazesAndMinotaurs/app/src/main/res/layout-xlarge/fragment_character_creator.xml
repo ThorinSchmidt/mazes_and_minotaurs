@@ -38,7 +38,8 @@
             android:layout_row="2"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Select Class Type:"/>
+            android:text="Select Class Type:"
+            android:textSize="30dp"/>
 
         <GridLayout
             android:layout_width="match_parent"
@@ -50,54 +51,59 @@
             <RadioGroup
                 android:id="@+id/warrior_radio_set"
                 android:layout_width="match_parent"
-                android:layout_height="241dp"
+                android:layout_height="542dp"
                 android:layout_column="0"
                 android:layout_columnSpan="3"
                 android:layout_row="2"
                 android:layout_rowSpan="3"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <RadioButton
                     android:id="@+id/amazon_radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Amazons" />
+                    android:text="Amazons"
+                    android:textSize="30dp"/>
 
                 <RadioButton
                     android:id="@+id/barbarian_radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Barbarians" />
+                    android:text="Barbarians"
+                    android:textSize="30dp" />
 
                 <RadioButton
                     android:id="@+id/centaur_radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Centaurs" />
+                    android:text="Centaurs"
+                    android:textSize="30dp"/>
 
                 <RadioButton
                     android:id="@+id/noble_radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Nobles" />
+                    android:text="Nobles"
+                    android:textSize="30dp"/>
 
                 <RadioButton
                     android:id="@+id/spear_radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Spearmen" />
+                    android:text="Spearmen"
+                    android:textSize="30dp" />
 
             </RadioGroup>
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="135dp"
-                android:layout_height="204dp"
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_row="0"
                 android:scaleType="fitCenter"
@@ -107,8 +113,8 @@
 
             <ImageButton
                 android:id="@+id/specialist_button"
-                android:layout_width="123dp"
-                android:layout_height="204dp"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
                 android:layout_column="2"
                 android:layout_row="0"
                 android:scaleType="fitCenter"
@@ -124,12 +130,13 @@
                 android:layout_row="1"
                 android:layout_weight="1"
                 android:text="Select Class:"
+                android:textSize="30dp"
                 android:visibility="invisible" />
 
             <RadioGroup
                 android:id="@+id/magician_radio_set"
                 android:layout_width="match_parent"
-                android:layout_height="241dp"
+                android:layout_height="542dp"
                 android:layout_column="0"
                 android:layout_columnSpan="3"
                 android:layout_row="2"
@@ -141,28 +148,32 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Elementalists" />
+                    android:text="Elementalists"
+                    android:textSize="30dp"/>
 
                 <RadioButton
                     android:id="@+id/lyrist_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Lyrists" />
+                    android:text="Lyrists"
+                    android:textSize="30dp"/>
 
                 <RadioButton
                     android:id="@+id/nymph_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Nymphs" />
+                    android:text="Nymphs"
+                    android:textSize="30dp" />
 
                 <RadioButton
                     android:id="@+id/priest_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Priests" />
+                    android:text="Priests"
+                    android:textSize="30dp" />
 
                 <RadioButton
                     android:id="@+id/sorcerer_radio"
@@ -175,7 +186,7 @@
             <RadioGroup
                 android:id="@+id/specialist_radio_set"
                 android:layout_width="match_parent"
-                android:layout_height="241dp"
+                android:layout_height="542dp"
                 android:layout_column="0"
                 android:layout_columnSpan="3"
                 android:layout_row="2"
@@ -187,20 +198,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Hunters" />
+                    android:text="Hunters"
+                    android:textSize="30dp"/>
 
                 <RadioButton
                     android:id="@+id/thief_radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Thieves" />
+                    android:text="Thieves"
+                    android:textSize="30dp"/>
             </RadioGroup>
 
             <ImageButton
                 android:id="@+id/magician_button"
-                android:layout_width="123dp"
-                android:layout_height="204dp"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
                 android:layout_column="0"
                 android:layout_row="0"
                 android:scaleType="fitCenter"
