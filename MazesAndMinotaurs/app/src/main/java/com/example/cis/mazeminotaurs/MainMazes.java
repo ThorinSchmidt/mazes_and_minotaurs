@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainMazes extends AppCompatActivity {
 
@@ -28,13 +29,21 @@ public class MainMazes extends AppCompatActivity {
         Button newChara = (Button) findViewById(R.id.new_character_bttn);
         Button charaCont = (Button) findViewById(R.id.character_continue_bttn);
         Button playerManual = (Button) findViewById(R.id.player_manual_bttn);
+        // Goes to the fragment_character_creator
         newChara.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 setContentView(R.layout.fragment_character_creator);
             }
         });
 
+        ImageButton warriorType = (ImageButton) findViewById(R.id.warrior_button);
+        ImageButton magicianType = (ImageButton) findViewById(R.id.magician_button);
+        ImageButton specialistType = (ImageButton) findViewById(R.id.specialist_button);
+        int classType = 0;
+
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
