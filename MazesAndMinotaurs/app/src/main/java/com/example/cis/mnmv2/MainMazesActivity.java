@@ -1,8 +1,13 @@
 package com.example.cis.mnmv2;
 
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,9 +17,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainMazesActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+        private static final String TAG = MainMazesActivity.class.getName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,17 +78,25 @@ public class MainMazesActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Fragment contentFragment = null;
 
         if (id == R.id.nav_credits) {
-            // Handle the camera action
+            // Credits to the creator, artists and programmers?
         }  else if (id == R.id.nav_website) {
-
+            // Hyperlink to the M&M Website
         } else if (id == R.id.nav_new_char) {
-
+            // Another way to get to the character creator fragment.
+            Log.i(TAG, "New Character Option selected");
+            contentFragment = new CharacterCreationFragment();
         } else if (id == R.id.nav_manage_char) {
 
         } else if (id == R.id.nav_delete_char) {
 
+        }
+
+        if (contentFragment != null) {
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

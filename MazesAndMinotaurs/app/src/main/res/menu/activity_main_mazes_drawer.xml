@@ -13,10 +13,14 @@
             <item
                 android:id="@+id/nav_delete_char"
                 android:title="Delete Character"/>
+
         </menu>
     </item>
 
     <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dice"
+            android:title="Dice Roller"/>
         <item
             android:id="@+id/nav_website"
             android:title="Website"/>
